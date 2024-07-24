@@ -4,6 +4,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { TwainComponent } from './components/twain/twain.component';
 import { ChildComponent } from './components/child/child.component';
 import { ParentComponent } from './components/parent/parent.component';
+import { SimpleFormComponent } from './components/simple-form/simple-form.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { ParentComponent } from './components/parent/parent.component';
     TwainComponent,
     ChildComponent,
     ParentComponent,
+    SimpleFormComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

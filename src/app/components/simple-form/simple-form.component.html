@@ -1,0 +1,26 @@
+<form [formGroup]="simpleForm" (ngSubmit)="onSubmit()">
+  <label for="textField">Text Field:</label>
+  <input
+    id="textField"
+    formControlName="textField"
+    type="text"
+    appContainsAngular
+  />
+  <div
+    *ngIf="
+      simpleForm.get('textField')?.hasError('required') &&
+      simpleForm.get('textField')?.touched
+    "
+  >
+    This field is required
+  </div>
+  <div
+    *ngIf="
+      simpleForm.get('textField')?.hasError('missingAngular') &&
+      simpleForm.get('textField')?.touched
+    "
+  >
+    The text must contain the word "Angular"
+  </div>
+  <button type="submit">Submit</button>
+</form>
