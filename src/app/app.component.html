@@ -5,4 +5,8 @@
 <app-parent />
 <br />
 <app-simple-form />
+<br />
+@if (loadService.isLoading) {
+<app-loading-overlay />
+}
 <router-outlet />
