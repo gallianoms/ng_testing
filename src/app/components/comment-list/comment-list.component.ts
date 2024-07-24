@@ -1,6 +1,5 @@
 import { CommentService } from './../../services/comment.service';
 import { Component, inject, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { IComment } from '../../interfaces/comment.interface';
 import { AsyncPipe, JsonPipe } from '@angular/common';
 import { CardComponent } from '../card/card.component';

@@ -5,5 +5,10 @@
 @if (loadService.isLoading) {
 <app-loading-overlay />
 }
-<app-comment-list />
+
+<div style="display: flex; justify-content: space-evenly">
+  <a routerLink="comments">comments</a>
+  <a routerLink="posts">posts</a>
+  <a routerLink="characters">characters</a>
+</div>
 <router-outlet />

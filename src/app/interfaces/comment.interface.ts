@@ -1,6 +1,6 @@
 export interface IComment {
-  postId: number;
   id: number;
+  postId: number;
   name: string;
   email: string;
   body: string;

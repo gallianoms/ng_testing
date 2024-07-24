@@ -1,0 +1,12 @@
+<div class="cards-container">
+  @if (paginatedData) { @for (post of paginatedData; track post.id) {
+  <app-card [post]="post" />
+  } }
+</div>
+<div class="pagination">
+  <app-pagination
+    [currentPage]="currentPage"
+    [totalPages]="totalPages"
+    (pageChange)="onPageChange($event)"
+  />
+</div>
