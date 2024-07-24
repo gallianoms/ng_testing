@@ -1,0 +1,8 @@
+@if (quote$ | async; as quote) {
+<p class="twain">
+  <i>{{ quote }}</i>
+</p>
+<button type="button" (click)="getQuote()">Next quote</button>
+} @if (errorMessage) {
+<p class="error">{{ errorMessage }}</p>
+}
