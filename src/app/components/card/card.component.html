@@ -1,0 +1,12 @@
+@if (comment) {
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Comment ID: {{ comment.id }}</h5>
+    <h6 class="card-subtitle">Post ID: {{ comment.postId }}</h6>
+    <p class="card-text"><strong>Name:</strong> {{ comment.name }}</p>
+    <p class="card-text"><strong>Email:</strong> {{ comment.email }}</p>
+    <p class="card-text"><strong>Body:</strong></p>
+    <p class="card-text">{{ comment.body }}</p>
+  </div>
+</div>
+}

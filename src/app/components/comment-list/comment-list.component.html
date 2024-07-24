@@ -1,0 +1,7 @@
+<div class="cards-container" (scroll)="onScroll($event)">
+  @if (comments) { @for (comment of comments; track comment.id) {
+  <app-card [comment]="comment" />
+  @if (loading) {
+  <div class="loading">Loading more...</div>
+  } } }
+</div>

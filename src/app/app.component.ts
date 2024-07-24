@@ -12,7 +12,7 @@ import { ChildComponent } from './components/child/child.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { SimpleFormComponent } from './components/simple-form/simple-form.component';
 import { LoadingOverlayComponent } from './components/loading-overlay/loading-overlay.component';
-// import { CommentListComponent } from './components/comment-list/comment-list.component';
+import { CommentListComponent } from './components/comment-list/comment-list.component';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +25,7 @@ import { LoadingOverlayComponent } from './components/loading-overlay/loading-ov
     ParentComponent,
     SimpleFormComponent,
     LoadingOverlayComponent,
-    // CommentListComponent,
+    CommentListComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

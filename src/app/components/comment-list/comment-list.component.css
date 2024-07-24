@@ -1,0 +1,12 @@
+.cards-container {
+  display: flex;
+  height: 80vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.loading {
+  text-align: center;
+  padding: 16px;
+}
