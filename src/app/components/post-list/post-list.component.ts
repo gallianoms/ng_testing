@@ -26,8 +26,6 @@ export class PostListComponent implements OnInit {
   ngOnInit(): void {
     // this._route.url.subscribe((url) => {
     //   this.currentRoute = url[0].path;
-    //   console.log('url', url);
-    //   console.log('currentRoute', this.currentRoute);
     // });
     this.updateCurrentRoute();
     this.loadPosts();
@@ -35,9 +33,6 @@ export class PostListComponent implements OnInit {
 
   private updateCurrentRoute(): void {
     this.currentRoute = this.router.url.split('/').pop()!;
-
-    // console.log('_router.url', url);
-    // console.log('currentRoute', this.currentRoute);
   }
 
   private loadPosts() {

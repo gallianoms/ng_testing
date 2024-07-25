@@ -1,7 +1,22 @@
+<app-filter (filterTextChanged)="onFilterTextChanged($event)"></app-filter>
 <div class="cards-container" (scroll)="onScroll($event)">
-  @if (comments) { @for (comment of comments; track comment.id) {
+  @if (filteredComments.length > 0) { @for (comment of filteredComments; track
+  comment.id) {
   <app-card [comment]="comment" />
   @if (loading) {
   <div class="loading">Loading more...</div>
-  } } }
+  } } }@else {
+  <div>No comments available.</div>
+  }
 </div>
+
+<!-- <app-filter (filterTextChanged)="onFilterTextChanged($event)"></app-filter>
+<div class="cards-container" (scroll)="onScroll($event)">
+  <ng-container *ngIf="filteredComments.length > 0; else noComments">
+    <app-card *ngFor="let comment of filteredComments; trackBy: trackByCommentId" [comment]="comment"></app-card>
+    <div *ngIf="loading" class="loading">Loading more...</div>
+  </ng-container>
+  <ng-template #noComments>
+    <div>No comments available.</div>
+  </ng-template>
+</div> -->
